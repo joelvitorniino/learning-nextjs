@@ -6,6 +6,12 @@ export default function Navbar() {
     return (
         <ul className={ styles.navbar }>
         <li>
+            <Link href="/">
+                Home
+            </Link>
+        </li>
+        
+        <li>
             <Link href="/products">
                  Produtos
             </Link>
@@ -16,10 +22,10 @@ export default function Navbar() {
                 Sobre
             </Link>
         </li>
-
+        
         <li>
-            <Link href="/">
-                Home
+            <Link href="/shop">
+                Shop
             </Link>
         </li>
       </ul>
