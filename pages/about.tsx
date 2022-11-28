@@ -1,11 +1,12 @@
 import Link from "next/link";
-import Navbar from "../components/Navbar";
+import styles from '../styles/About.module.css'
 
 export default function About() {
     return (
         <>
         <h1>About of website!</h1>
-        <Link href="/">Home</Link>
+        <br />
+        <Link href="/" className={ styles.previous }>Home</Link>
         </>
     );
 };
