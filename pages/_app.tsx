@@ -1,9 +1,7 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
-import MainContainer from '../components/MainContainer'
+import { Rubik } from '@next/font/google'
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <MainContainer>
-     <Component {...pageProps} />
-  </MainContainer>
+  return <Component {...pageProps} />
 }
