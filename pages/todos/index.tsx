@@ -1,4 +1,5 @@
 import { GetStaticProps, InferGetStaticPropsType } from 'next';
+import Link from 'next/link';
 import styles from '../../styles/Todo.module.css'
 
 interface Todos {
@@ -25,7 +26,12 @@ export default function Todos({ todos }: InferGetStaticPropsType<typeof getStati
             <ul className={ styles.todolist }>
                 { todos.map((todo => {
                     return (
-                        <li key={todo.id}>{todo.title}</li>
+                        <li key={todo.id}>
+                            {todo.title} - {' '}
+                            <Link href={`/todos/${todo.id}`}>
+                                Ver mais
+                            </Link>
+                        </li>
                     )
                 }))}
             </ul>
