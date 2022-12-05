@@ -1,5 +1,5 @@
 import { GetStaticProps, InferGetStaticPropsType } from 'next';
-import styles from '../styles/Todo.module.css'
+import styles from '../../styles/Todo.module.css'
 
 interface Todos {
     userId: number;
